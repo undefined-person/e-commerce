@@ -13,11 +13,7 @@ const SetupPage = () => {
     }
   }, [opOpen, isOpen])
 
-  return (
-    <div>
-      Root page
-    </div>
-  )
+  return null
 }
 
 export default SetupPage
