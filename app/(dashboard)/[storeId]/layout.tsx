@@ -3,6 +3,8 @@ import { auth } from '@clerk/nextjs'
 import { redirect } from 'next/navigation'
 import prismaDb from '@/lib/prismadb'
 
+import { Navbar } from '@/components/navbar'
+
 interface DashboardLayoutProps {
   children: ReactNode
   params: {
@@ -31,7 +33,7 @@ export default async function DashboardLayout(props : DashboardLayoutProps) {
 
   return (
     <div>
-      NavBar
+      <Navbar />
       {children}
     </div>
   )

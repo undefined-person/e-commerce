@@ -7,7 +7,6 @@ import { zodResolver } from '@hookform/resolvers/zod'
 import { useStoreModal } from '@/hooks/use-store-modal'
 import axios from 'axios'
 import { toast } from 'react-hot-toast'
-import { redirect } from 'next/navigation'
 
 import { Modal } from '@/components/ui/modal'
 import {
