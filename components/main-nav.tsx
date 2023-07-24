@@ -1,9 +1,10 @@
 'use client'
 
-import { cn } from '@/lib/utils'
 import Link from 'next/link'
 import { useParams, usePathname } from 'next/navigation'
 import { HTMLAttributes } from 'react'
+
+import { cn } from '@/lib/utils'
 
 interface MainNavProps extends HTMLAttributes<HTMLElement> {
   className: string
@@ -29,6 +30,11 @@ export const MainNav = (props: MainNavProps) => {
       href: `/${params.storeId}/settings`,
       label: 'Settings',
       active: pathname === `/${params.storeId}/settings`,
+    },
+    {
+      href: `/${params.storeId}/categories`,
+      label: 'Categories',
+      active: pathname === `/${params.storeId}/categories`,
     },
   ]
 
