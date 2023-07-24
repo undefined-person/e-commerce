@@ -1,5 +1,5 @@
 import prismaDb from '@/lib/prismadb'
-import { SizeForm } from './components/billboard-form'
+import { SizeForm } from './components/size-form'
 
 interface SizePageProps {
   params: {
